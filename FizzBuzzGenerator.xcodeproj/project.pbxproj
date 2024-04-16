@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78A816FB2BCF00750084B774 /* FizzBuzzGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A816FA2BCF00750084B774 /* FizzBuzzGeneratorApp.swift */; };
-		78A816FD2BCF00750084B774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A816FC2BCF00750084B774 /* ContentView.swift */; };
+		78A816FD2BCF00750084B774 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A816FC2BCF00750084B774 /* MainView.swift */; };
 		78A816FF2BCF00780084B774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A816FE2BCF00780084B774 /* Assets.xcassets */; };
 		78A817022BCF00780084B774 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A817012BCF00780084B774 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		78A816F72BCF00750084B774 /* FizzBuzzGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzzGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A816FA2BCF00750084B774 /* FizzBuzzGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzGeneratorApp.swift; sourceTree = "<group>"; };
-		78A816FC2BCF00750084B774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78A816FC2BCF00750084B774 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		78A816FE2BCF00780084B774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A817012BCF00780084B774 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,11 @@
 		78A816F92BCF00750084B774 /* FizzBuzzGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				78A8170A2BCF036B0084B774 /* ViewModel */,
+				78A817092BCF03660084B774 /* View */,
+				78A817082BCF03610084B774 /* Model */,
 				78A816FA2BCF00750084B774 /* FizzBuzzGeneratorApp.swift */,
-				78A816FC2BCF00750084B774 /* ContentView.swift */,
+				78A816FC2BCF00750084B774 /* MainView.swift */,
 				78A816FE2BCF00780084B774 /* Assets.xcassets */,
 				78A817002BCF00780084B774 /* Preview Content */,
 			);
@@ -65,6 +68,27 @@
 				78A817012BCF00780084B774 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78A817082BCF03610084B774 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78A817092BCF03660084B774 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A8170A2BCF036B0084B774 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78A816FD2BCF00750084B774 /* ContentView.swift in Sources */,
+				78A816FD2BCF00750084B774 /* MainView.swift in Sources */,
 				78A816FB2BCF00750084B774 /* FizzBuzzGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
