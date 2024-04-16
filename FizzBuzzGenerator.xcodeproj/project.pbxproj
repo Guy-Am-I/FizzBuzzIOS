@@ -12,6 +12,7 @@
 		78295A192BCF078400EF30E1 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78295A182BCF078400EF30E1 /* AboutView.swift */; };
 		78295A1D2BCF0F2000EF30E1 /* BackgroundImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78295A1C2BCF0F2000EF30E1 /* BackgroundImgView.swift */; };
 		78295A1F2BCF168300EF30E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78295A1E2BCF168300EF30E1 /* Constants.swift */; };
+		78295A212BCF42EE00EF30E1 /* FizzBuzzAlgoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78295A202BCF42EE00EF30E1 /* FizzBuzzAlgoModel.swift */; };
 		78A816FB2BCF00750084B774 /* FizzBuzzGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A816FA2BCF00750084B774 /* FizzBuzzGeneratorApp.swift */; };
 		78A816FD2BCF00750084B774 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A816FC2BCF00750084B774 /* MainView.swift */; };
 		78A816FF2BCF00780084B774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A816FE2BCF00780084B774 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		78295A182BCF078400EF30E1 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		78295A1C2BCF0F2000EF30E1 /* BackgroundImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImgView.swift; sourceTree = SOURCE_ROOT; };
 		78295A1E2BCF168300EF30E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = SOURCE_ROOT; };
+		78295A202BCF42EE00EF30E1 /* FizzBuzzAlgoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAlgoModel.swift; sourceTree = SOURCE_ROOT; };
 		78A816F72BCF00750084B774 /* FizzBuzzGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzzGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A816FA2BCF00750084B774 /* FizzBuzzGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzGeneratorApp.swift; sourceTree = "<group>"; };
 		78A816FC2BCF00750084B774 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		78295A112BCF04C400EF30E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78295A202BCF42EE00EF30E1 /* FizzBuzzAlgoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				78295A152BCF073100EF30E1 /* FizzBuzzView.swift in Sources */,
 				78A816FD2BCF00750084B774 /* MainView.swift in Sources */,
 				78295A172BCF075900EF30E1 /* CodeCreatorView.swift in Sources */,
+				78295A212BCF42EE00EF30E1 /* FizzBuzzAlgoModel.swift in Sources */,
 				78295A1F2BCF168300EF30E1 /* Constants.swift in Sources */,
 				78A816FB2BCF00750084B774 /* FizzBuzzGeneratorApp.swift in Sources */,
 				78295A192BCF078400EF30E1 /* AboutView.swift in Sources */,
