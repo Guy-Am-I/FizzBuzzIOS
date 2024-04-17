@@ -7,12 +7,6 @@
 
 import Foundation
 
-enum function {
-    case zeroArgFunc(() -> String)
-    case oneArgFunc((String) -> String)
-    case twoArgFunc((String, String) -> String)
-}
-
 
 struct FizzBuzzAlgoModel: Identifiable {
     let id = UUID()
@@ -27,14 +21,46 @@ struct FizzBuzzAlgoModel: Identifiable {
     let equals = "=="
     let modulo = "%"
     
-    var loopFunc: function
-    var ifFunc: function
-    var elseIfFunc: function
-    var elseFunc: function
-    var printFunc: function
-    var printIdxFunc: function
+    var loopFunc: () -> String
+    var ifFunc: ((String, String) -> String)
+    var elseIfFunc: ((String, String) -> String)
+    var elseFunc: (String) -> String
+    var printFunc: (String) -> String
+    var printIdxFunc: () -> String
     
     var fizzBuzzCode: String {
-        "CODE: \(name)"
+        let mod3 = "i \(modulo) 3 \(equals) 0"
+        let codeFizz = printFunc("Fizz")
+        
+        let mod5 = "i \(modulo) 5 \(equals) 0"
+        let codeBuzz = printFunc("Buzz")
+        
+        let mod15 = "i \(modulo) 3 \(equals) 0"
+        let codeFizzBuzz = printFunc("FizzBuzz")
+        
+        let printInt = printInt()
+        let codeInLoop = """
+        \(ifFunc(mod15, codeFizzBuzz))
+            \(elseIfFunc(mod3, codeFizz.indent()))
+            \(elseIfFunc(mod5, codeBuzz.indent()))
+            \(elseFunc(printInt.indent()))
+        """
+        
+        let mainCode = """
+        \(maxConstDef)
+        
+        \(loopFunc(codeInLoop))
+        """
+        
+        var ver = ""
+        if let versionNumber = versionNumber {
+            ver = " implementation Version \(ver)"
+        }
+        
+        return """
+            \(commentCode("FizzBuzz\(ver) is implemented in the \(name) programming language."))
+        \(imports)
+        \(boilerplate(mainCode))
+        """
     }
 }
