@@ -16,12 +16,12 @@ struct FizzBuzzAlgoModel: Identifiable {
     var imports: String = ""
     let maxConstDef: String
     var commentCode: (String) -> String = {"\\*" + $0 + "*\\"}
-    var boilerplate: function = .oneArgFunc{$0}
+    var boilerplate: (String) -> String = {$0}
     
     let equals = "=="
     let modulo = "%"
     
-    var loopFunc: () -> String
+    var loopFunc: (String) -> String
     var ifFunc: ((String, String) -> String)
     var elseIfFunc: ((String, String) -> String)
     var elseFunc: (String) -> String
@@ -38,12 +38,11 @@ struct FizzBuzzAlgoModel: Identifiable {
         let mod15 = "i \(modulo) 3 \(equals) 0"
         let codeFizzBuzz = printFunc("FizzBuzz")
         
-        let printInt = printInt()
         let codeInLoop = """
         \(ifFunc(mod15, codeFizzBuzz))
             \(elseIfFunc(mod3, codeFizz.indent()))
             \(elseIfFunc(mod5, codeBuzz.indent()))
-            \(elseFunc(printInt.indent()))
+            \(elseFunc(printIdxFunc().indent()))
         """
         
         let mainCode = """
@@ -54,7 +53,7 @@ struct FizzBuzzAlgoModel: Identifiable {
         
         var ver = ""
         if let versionNumber = versionNumber {
-            ver = " implementation Version \(ver)"
+            ver = " implementation Version \(versionNumber)"
         }
         
         return """
